@@ -1,0 +1,43 @@
+*{
+    box-sizing: border-box;
+    margin: 0%;
+    padding: 0%;
+    text-align: center;
+}
+
+#container { 
+    display: grid; 
+    grid-template-columns: 33.33% 33.33% 33.33%; 
+    grid-template-rows: 20% 5% 60% 15%; 
+    grid-template-areas: 
+        "header header header" 
+        "nav nav nav" 
+        "left right right" 
+        "footer footer footer"; 
+    height: 100vh; /* Garante que o contêiner use a altura da tela para as porcentagens funcionarem */
+} 
+
+header { 
+    background-color: red; 
+    grid-area: header; 
+}
+nav { 
+    background-color: blue; 
+    color: white;
+    grid-area: nav; 
+}
+aside { 
+    background-color: green;
+    color: white;
+
+    grid-area: left;
+ }
+main {
+     background-color: yellow;
+     grid-area: right;
+     }
+footer { 
+    background-color: gray;
+    grid-area: footer; 
+}
+
