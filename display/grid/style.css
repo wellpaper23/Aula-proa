@@ -14,7 +14,7 @@
         "nav nav nav" 
         "left right right" 
         "footer footer footer"; 
-    height: 100vh; /* Garante que o contêiner use a altura da tela para as porcentagens funcionarem */
+    height: 100vh; 
 } 
 
 header { 
