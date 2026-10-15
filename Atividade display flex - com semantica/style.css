@@ -10,7 +10,7 @@
 #container{
     display: flex;
     flex-direction: column;
-    width: 80%;
+    width: 100%;
     height: 100%;
     justify-content: center;
     align-items: center;
@@ -26,7 +26,7 @@ display: flex;
     display: flex;
     position: sticky;
     top: 0%;
-    height: 18%;
+    height: 15%;
     width: 100%;
     background-color: yellow;
     align-items: center;
@@ -36,7 +36,7 @@ display: flex;
 main{
     display: flex;
     width: 100%;
-    height: 65%;
+    height: 70%;
 }
 
 
@@ -48,14 +48,14 @@ main{
     flex-direction: column;
     display: flex;
     align-items: center;
-    gap:13px;
+    gap: 5%;
 
 }
 
 #sec1>*{
     width: 92%;
     background-color: white;
-    height: 42%;
+    height: 39%;
 }
 
 #sec2{
@@ -69,7 +69,6 @@ main{
 }
 #sec2>*{
     width: 95%;
-
 }
 
 article{
@@ -97,6 +96,28 @@ article{
 footer{
     background-color: gray;
     width: 100%;
-    height: 10%;
+    height: 15%;
 }
 
+@media (max-width: 600px){
+    main{
+        flex-direction: column;
+    }
+    #sec1{
+        width: 100%;
+    }
+    #sec2{
+        width: 100%;
+    }
+    #picture{
+        height: 50%;
+    }
+    #sec1{
+        height: 30%;
+    }
+    #sec1>*{
+        width: 92%;
+        background-color: white;
+        height: 30%;
+    }
+}
