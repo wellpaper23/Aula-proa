@@ -1,0 +1,164 @@
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  width: 100%;
+  min-height: 100vh;
+  position: relative;
+  display: grid;
+  grid-template-columns: 100%;
+  grid-template-rows: 10vh 5vh minmax(60vh,auto) 15vh;
+  text-align: center;
+  grid-template-areas:
+    "cabecalho"
+    "navegacao"
+    "principal"
+    "rodape";
+}
+
+header {
+  position: relative;
+  grid-area: cabecalho;
+  width: 100%;
+  height: 100%;
+  background-color: #000;
+  color: #fff;
+}
+
+nav {
+  position: relative;
+  grid-area: navegacao;
+  width: 100%;
+  height: 100%;
+  background-color: blue;
+  color: #fff;
+}
+
+.principal {
+  position: relative;
+  grid-area: principal;
+  width: 100%;
+  display: flex;
+}
+
+
+.lateral {
+  position: relative;
+  width: 20%;
+  height: 100%;
+  background-color: gray;
+  color: #fff;
+}
+section figure{
+    width: 100%;
+    height: 100%;
+    display: flex;
+}
+
+section figure img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+.lateral figure{
+    width: 100%;
+}
+
+.lateral figure img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+aside figure{
+    width: 100%;
+}
+
+aside figure img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+
+
+
+section {
+  position: relative;
+  width: 60%;
+  height: 100%;
+  background-color: #f2f2f2;
+  color: #000;
+}
+
+aside {
+  position: relative;
+  width: 20%;
+  height: 100%;
+  background-color: pink;
+  color: #000;
+}
+
+footer {
+  position: relative;
+  grid-area: rodape;
+  width: 100%;
+  height: 100%;
+  background-color: #000;
+  color: #fff;
+}
+
+
+@media (max-width:650px){
+    .principal{
+        flex-direction: column;
+
+    }
+    .lateral, section,aside{
+        width: 100%;
+    }
+    .lateral{
+        height: 20%;
+    }
+
+    section figure{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    }
+
+    section figure img{
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+        object-position: center;
+    }
+
+    .lateral figure{
+        width: 100%;
+    }
+
+    .lateral figure img{
+        height: 100%;
+        width: 20%;
+        object-fit: cover;
+        object-position: center;
+    }
+    
+    aside figure{
+        width: 100%;
+    }
+
+    aside figure img{
+        height: 100%;
+        width: 50%;
+        object-fit: cover;
+        object-position: center;
+    }
+}
